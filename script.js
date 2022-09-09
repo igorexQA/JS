@@ -17,25 +17,25 @@ const userFirstnumber = +prompt("Please enter first number");
 const userSecondnumber = +prompt("Please enter second number");
 
 //Point 7
-let Addition = userFirstnumber + userSecondnumber;
-console.log(Addition);
+let addition = userFirstnumber + userSecondnumber;
+console.log(addition);
 
-const Subtraction = userFirstnumber - userSecondnumber;
-console.log(Subtraction);
+let subtraction = userFirstnumber - userSecondnumber;
+console.log(subtraction);
 
-const Multiplication = userFirstnumber * userSecondnumber;
-console.log(Multiplication);
+let multiplication = userFirstnumber * userSecondnumber;
+console.log(multiplication);
 
-const Division = userFirstnumber / userSecondnumber;
-console.log(Division);
+let division = userFirstnumber / userSecondnumber;
+console.log(division);
 
 //Point 8
-UseryearOFbirth = prompt("Please enter your year of birth?");
+const useryearOFbirth = prompt("Please enter your year of birth?");
 
 //Point 9
 const currentYear = new Date().getFullYear();
 
-userAge = currentYear - UseryearOFbirth;
+const userAge = currentYear - useryearOFbirth;
 
 console.log(userAge, "Years");
 
