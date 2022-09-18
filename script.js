@@ -17,11 +17,11 @@ const currency = "UAH";
 const sumOforder = prompt("Sum of order?");
 
 if (sumOforder <= 100) {
-  alert(`You have discount : ${(sumOforder * lowDiscount) .toFixed(2)} ${currency}`);
+  console.log(`You have discount : ${(sumOforder * lowDiscount) .toFixed(2)} ${currency}`);
 } else if (sumOforder > 100 && sumOforder <= 200) {
-  alert(`You have discount : ${(sumOforder * mediumDiscount) .toFixed(2)} ${currency}`);
+  console.log(`You have discount : ${(sumOforder * mediumDiscount) .toFixed(2)} ${currency}`);
 } else {
-  alert(`You have discount : ${(sumOforder * highDiscount) .toFixed(2)} ${currency}`);
+  console.log(`You have discount : ${(sumOforder * highDiscount) .toFixed(2)} ${currency}`);
 }
 //Task 54
 for (let i = 2; i <= 9; i = i + 1) {
