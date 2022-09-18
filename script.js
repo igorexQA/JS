@@ -4,26 +4,24 @@ for (let i = 10; i <= 25; i += 0.5) {
 }
 
 //Task 2
-let askingNumber = prompt("Please enter prime number");
-while (askingNumber % 2 == 0) {
-  alert("Your number is not prime");
+let askingNumber = +prompt("Please enter prime number");
+while (askingNumber === 0) {
   askingNumber = prompt("Please enter number");
 }
-alert("Your number is prime");
 
 //Task 3
-lowDiscount = 0.03;
-mediumDiscount = 0.05;
-highDiscount = 0.07;
-currency = "UAH";
-const SumOforder = prompt("Sum of order?");
+const lowDiscount = 0.03;
+const mediumDiscount = 0.05;
+const highDiscount = 0.07;
+const currency = "UAH";
+const sumOforder = prompt("Sum of order?");
 
-if (SumOforder <= 100) {
-  alert(`You have discount : ${(SumOforder * lowDiscount) .toFixed(2)} ${currency}`);
-} else if (SumOforder > 100 && SumOforder <= 200) {
-  alert(`You have discount : ${(SumOforder * mediumDiscount) .toFixed(2)} ${currency}`);
+if (sumOforder <= 100) {
+  alert(`You have discount : ${(sumOforder * lowDiscount) .toFixed(2)} ${currency}`);
+} else if (sumOforder > 100 && sumOforder <= 200) {
+  alert(`You have discount : ${(sumOforder * mediumDiscount) .toFixed(2)} ${currency}`);
 } else {
-  alert(`You have discount : ${(SumOforder * highDiscount) .toFixed(2)} ${currency}`);
+  alert(`You have discount : ${(sumOforder * highDiscount) .toFixed(2)} ${currency}`);
 }
 //Task 54
 for (let i = 2; i <= 9; i = i + 1) {
@@ -35,7 +33,7 @@ for (let i = 2; i <= 9; i = i + 1) {
 }
 
 // Task 5
-let courseOFusd = 36.76;
+const courseOFusd = 36.76;
 const americanCurrency = "USD";
 const ukranianCurency = "UAH";
 
